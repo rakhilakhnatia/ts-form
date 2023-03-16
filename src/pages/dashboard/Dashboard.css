@@ -1,0 +1,17 @@
+.cart {
+    border-radius: 50%;
+    background-color: #f31a1a;
+    padding: 5px 10px;
+    position: relative;
+    top: 7px;
+    left: 3px;
+}
+
+.icon-cart {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+span.icon-cart svg {
+    font-size: 35px;
+}

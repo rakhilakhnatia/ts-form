@@ -5,3 +5,28 @@ body {
     margin: 0;
     padding: 0
 }
+
+.text-white {
+    color: #fff;
+}
+
+.card {
+    margin-top: 20px;
+    position: relative;
+}
+
+.card-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cart-button {
+    position: absolute !important;
+    bottom: 4%;
+    right: 35%;
+}
+
+.css-b6lsxj-MuiButtonBase-root-MuiCardActionArea-root {
+    position: unset !important;
+}
