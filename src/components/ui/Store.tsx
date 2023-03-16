@@ -7,13 +7,19 @@ import { CardActionArea } from '@mui/material';
 import { Box } from "@mui/system";
 import Button from '@mui/material/Button';
 
+
 const Store = () => {
 	console.log(items);
-
-	return (
-		<>
-			<Typography variant="h5" className="text-white"> Products</Typography>
-			<Box  className="card-box">
+function sliceDescription(data: string, value:number) {
+	if (data) {
+		var mainData = data.slice(0, value);
+		return mainData
+	}
+}
+return (
+	<>
+		<Typography variant="h5" className="text-white"> Products</Typography>
+		<Box className="card-box">
 			{items && items.map((item, k) => (
 				<Card className="card" sx={{ maxWidth: 345 }} key={k}>
 					<CardActionArea>
@@ -25,10 +31,10 @@ const Store = () => {
 						/>
 						<CardContent>
 							<Typography gutterBottom variant="h5" component="div">
-								{item.title}
+								{sliceDescription(item.title,22)}
 							</Typography>
-							<Typography variant="body2" color="text.secondary" style={{textAlign:"center"}}>
-								{item.description}
+							<Typography variant="body2" color="text.secondary" style={{ textAlign: "center" }}>
+								{sliceDescription(item.description,120)}
 							</Typography>
 							<Button variant="contained" className="cart-button">ADD TO CART</Button>
 
@@ -36,9 +42,9 @@ const Store = () => {
 					</CardActionArea>
 				</Card>
 			))}
-			</Box>
-		</>
-	);
+		</Box>
+	</>
+);
 };
 
 export default Store;
