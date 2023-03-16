@@ -33,9 +33,9 @@ function App() {
     {
       path: "/dashboard",
       element: (
-      <PrivateRoute >
+      // <PrivateRoute >
         <Dashboard />
-        </PrivateRoute> 
+        // </PrivateRoute> 
         ),
 },
   ]);

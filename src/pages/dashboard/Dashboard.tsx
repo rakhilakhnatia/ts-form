@@ -192,7 +192,7 @@ function Dashboard() {
         </Container>
       </AppBar>
       <Button onClick={() => {
-     navigate('/dashboard',
+        navigate('/dashboard',
           {
             itemId: 86,
             otherParam: 'anything you want here',
@@ -203,7 +203,7 @@ function Dashboard() {
         navigate
       </Button>
       <Box style={{ minHeight: "50vh", width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-        <Typography style={{ color: "#fff" }}>{currentUser.email && 'Hi ! Welcome ' + currentUser.email} </Typography>
+        {/* <Typography style={{ color: "#fff" }}>{currentUser.email && 'Hi ! Welcome ' + currentUser.email} </Typography> */}
         <div>
           &nbsp; &nbsp; &nbsp;<Button variant="contained" color="success" onClick={handleClickOpen}>
             LOGOUT

@@ -7,7 +7,6 @@ type FormInputprops={
 } & React.ComponentProps<'input'>
 
 const FormInput = React.forwardRef((props,ref)  =>{
-	console.log(ref);
 	return (
 		<>
 			<div className="outlined-basic-button">
