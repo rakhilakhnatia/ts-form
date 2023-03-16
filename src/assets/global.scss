@@ -1,0 +1,40 @@
+.main_container_form {
+    /* From https://css.glass */
+    background: rgba(45, 24, 39, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px)#ffffff4d;
+    max-width: 50%;
+    min-height: 50vh;
+    margin: 7rem auto 0 auto;
+    padding: 2rem;
+}
+
+.form_heading {
+    width: 35%;
+    padding-bottom: 5px;
+    margin: 0 auto;
+    border-bottom: 4px solid #fff;
+    color: #fff;
+    font-family: 'Roboto';
+    text-align: center;
+}
+
+.inner_container_form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.outlined-basic-button {
+    margin: 20px 0;
+}
+
+.link {
+    text-align: end;
+    padding-top: 1rem
+}
